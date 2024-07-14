@@ -1,6 +1,15 @@
+@font-face {
+    font-family: "BeautifulPolice";
+    src: url("./fonts/BeautifulPoliceOfficer-rvv8x.ttf");
+}
+
 html, body {
     height: 100%;
     margin: 0;
+}
+
+body {
+    -webkit-app-region: drag;
 }
 
 
@@ -16,7 +25,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('IMG_1193.jpg');
+    background-color: #201e1e;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +37,9 @@ body::before {
     width: 100%;
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10vw;
-    color: rgb(247, 43, 237);
+    font-family: "BeautifulPolice";
+    font-size: 5rem;
+    color: rgb(43, 247, 233);
+    letter-spacing: 10px;
+    max-width: 100%;
 }
