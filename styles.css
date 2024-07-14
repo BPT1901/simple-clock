@@ -6,7 +6,7 @@ html, body {
 
 body {
     position: relative;
-    min-height: 100vh;
+    min-height: 10vh;
 }
 
 body::before {
