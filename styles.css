@@ -6,6 +6,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: #0b0b0b;
 }
 
 body {
@@ -25,7 +26,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #201e1e;
+    background-color: #0b0b0b;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +40,7 @@ body::before {
     justify-content: center;
     font-family: "BeautifulPolice";
     font-size: 5rem;
-    color: rgb(43, 247, 233);
+    color: rgb(247, 43, 230);
     letter-spacing: 10px;
     max-width: 100%;
 }

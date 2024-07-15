@@ -1,5 +1,5 @@
 {
-  "name": "timer-app",
+  "name": "clock",
   "version": "1.0.0",
   "description": "A simple timer app",
   "main": "main.js",
@@ -11,6 +11,7 @@
   "devDependencies": {
     "@electron-forge/cli": "^7.4.0",
     "@electron-forge/maker-dmg": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
     "@electron-forge/maker-zip": "^7.4.0",
     "electron": "^31.2.0",
     "electron-rebuild": "^3.2.9",
@@ -18,17 +19,29 @@
   },
   "config": {
     "forge": {
+      "packagerConfig": {
+        "icon": "icons/clock2.icns"
+      },
       "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "simple_clock",
+            "iconUrl": "icons/clock2.ico",
+            "setupIcon": "icons/clock2.ico"
+          }
+        },
         {
           "name": "@electron-forge/maker-dmg",
           "config": {
-            "name": "TimerApp"
+            "icon": "icons/clock2.icns"
           }
         },
         {
           "name": "@electron-forge/maker-zip",
           "platforms": [
-            "darwin"
+            "darwin",
+            "win32"
           ]
         }
       ]
