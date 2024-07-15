@@ -1,10 +1,14 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, screen } = require('electron')
 
 const createWindow = () => {
+    const { width } = screen.getPrimaryDisplay().workAreaSize;
+
     const win = new BrowserWindow({
         titleBarStyle: 'hidden',
         width: 1800,
         height: 100,
+        x: (width - 1800) / 2, 
+        y: 0, 
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,   
